@@ -12,3 +12,7 @@ export function divide (a: number, b:number): number | null {
   }
   return a / b
 }
+
+export function square (a: number, b: number): number {
+  return a ** b
+};
