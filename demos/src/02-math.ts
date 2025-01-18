@@ -1,14 +1,14 @@
-export function sum(a: number, b:number): number {
+export function sum (a: number, b:number): number {
   return a + b
 }
 
-export function multiplay(a: number, b:number): number {
+export function multiplay (a: number, b:number): number {
   return a * b
 }
 
-export function divide(a: number, b:number): number | null {
+export function divide (a: number, b:number): number | null {
   if (b === 0) {
-    return null;
+    return null
   }
   return a / b
 }
