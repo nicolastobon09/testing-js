@@ -10,6 +10,10 @@ class BooksService {
     return this.mongoDB.getAll(this.collection, query);
   }
 
+  getBookById(id) {
+    return this.mongoDB.get(this.collection, id);
+  }
+
   createBook(newBook) {
     return this.mongoDB.create(this.collection, newBook);
   }

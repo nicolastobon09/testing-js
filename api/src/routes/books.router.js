@@ -9,6 +9,11 @@ router.get('/', async (req, res) => {
   res.status(200).json(books);
 });
 
+router.get('/:id', async (req, res) => {
+  const book = await service.getBookById(req.params.id);
+  res.status(200).json(book);
+});
+
 router.post('/', async (req, res) => {
   const { body } = req;
   const newBook = await service.createBook(body);
