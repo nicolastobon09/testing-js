@@ -1,10 +1,17 @@
 version: '3.3'
 
 services:
-  mongo:
+  mongo-prod:
     image: mongo:4.4
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root123
+    ports:
+      - 27017:27017
+  mongo-dev:
+    image: mongo:4.4
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: dev
+      MONGO_INITDB_ROOT_PASSWORD: dev123
     ports:
       - 27017:27017

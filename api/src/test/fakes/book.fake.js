@@ -3,6 +3,8 @@ const { faker } = require('@faker-js/faker');
 const generateOneBook = () => ({
   _id: faker.string.uuid(),
   name: faker.commerce.productName(),
+  author: faker.person.fullName(),
+  created_at: faker.date.recent(),
 });
 
 const generateBooks = (size) => {
