@@ -53,7 +53,7 @@ jobs:
       image: node:16
 
     services:
-      mongo-e2e:
+      mongo-dev:
         image: mongo:4.4
         ports:
           - 27017:27017
